@@ -1,0 +1,32 @@
+{
+  "name": "debounce-decorator",
+  "version": "0.0.1",
+  "description": "ES7 function decorator",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/babel/bin/babel.js src/ -x .es6 --out-dir lib --modules umd",
+    "test": "./node_modules/babel/bin/babel.js tests/ -x .es7 --stage 0 --out-dir tests && ./node_modules/mocha/bin/mocha --require babel/polyfill 'tests/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeZeD/debounce-decorator.git"
+  },
+  "keywords": [
+    "debounce",
+    "throttle",
+    "ES7",
+    "decorator",
+    "decorators",
+    "utility"
+  ],
+  "author": "NeZeD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeZeD/debounce-decorator/issues"
+  },
+  "homepage": "https://github.com/NeZeD/debounce-decorator#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "mocha": "^2.2.5"
+  }
+}
